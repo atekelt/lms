@@ -4,7 +4,13 @@ import { listCourses } from '../actions/courseActions';
 import CourseBox from '../components/CourseBox';
 import { NavLink } from "react-router-dom";
 import bck from "../assets/img/workspace.jpg";
+const divStyle = {
 
+
+
+  backgroundColor: '#F3B029',
+
+};
 function Features() {
 
     const dispatch = useDispatch()
@@ -21,7 +27,7 @@ function Features() {
 
   return (
     <div>
-      <section className="bg-info">
+      <section style={divStyle}>
         <div className="container py-5">
           <div className="row d-flex justify-content-center text-center">
             <div className="col-lg-2 col-12 text-light align-items-center">
@@ -30,7 +36,7 @@ function Features() {
             <div className="col-lg-7 col-12 text-light pt-2">
               <h3 className="light-300">Make transformations successful</h3>
               <p className="light-300">Get ready to transform yourself from zero to hero with our courses
-              <br/><a rel="noreferrer" target="_blank" href='https://www.freepik.com/vectors/mockup'>Mockup vector created by macrovector - www.freepik.com</a></p>
+              </p>
             </div>
             <div className="col-lg-3 col-12 pt-4">
               <NavLink to="/courses" exact>

@@ -1,6 +1,10 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+const divStyle = {
 
+  backgroundColor: '#F3B029',
+
+};
 function Footer() {
   return (
     <div>
@@ -9,13 +13,9 @@ function Footer() {
           <div className="row py-4">
             <div className="col-lg-3 col-12 align-left">
               <NavLink className="navbar-brand" to="/" exact>
-                <i className='bi-building text-success'></i>
                 <span className="text-white">L</span>
-                <span className="text-primary">E</span>
-                <span className="text-white">M</span>
-                <span className="text-primary">N</span>
-                <span className="text-primary">O</span>
-                <span className="text-white">S</span>
+                <span className="text-white">I</span>
+                <span className="text-white">Q</span>
               </NavLink>
               <p className="text-light my-lg-4 my-2">
                 It's a Learning management System with online examination facility to help teachers and students.
@@ -109,23 +109,23 @@ function Footer() {
                 </li>
                 <li className="pb-2">
                   <i className='bi-chevron-right'></i>
-                  <a className="text-decoration-none text-light" href="mailto:0n3.a77@gmail.com">0n3.a77@gmail.com</a>
+                  <a className="text-decoration-none text-light" href="liqdesigns@gmail.com">liqdesigns@gmail.com</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="w-100 bg-primary py-3">
+        <div className="w-100 py-3" style={divStyle}>
           <div className="container">
             <div className="row pt-2">
               <div className="col-lg-6 col-sm-12">
                 <p className="text-lg-start text-center text-light light-300">
-                  &copy; Copyright {(new Date().getFullYear())} One.all Company. All Rights Reserved.
+                  &copy; Copyright {(new Date().getFullYear())} LIQ designs. All Rights Reserved.
                 </p>
               </div>
               <div className="col-lg-6 col-sm-12">
                 <p className="text-lg-end text-center text-light light-300">
-                  Designed by <a rel="noreferrer" className="text-decoration-none text-light" href="https://www.onedotall.in" target="_blank"><strong>One.all</strong></a>
+                  Designed by <a rel="noreferrer" className="text-decoration-none text-light" href="#" target="_blank"><strong>Atekelt Afework</strong></a>
                 </p>
               </div>
             </div>

@@ -2,7 +2,10 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../actions/teacherActions';
 import { NavLink } from "react-router-dom";
+const imgStyle = {
+  width:'50%',
 
+};
 function Navbar() {
 
   const dispatch = useDispatch()
@@ -19,13 +22,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div className="container">
           <NavLink className="navbar-brand fs-3 fw-bold" to="/" exact>
-            <i className='bi-building text-success'></i>
-            <span className="text-dark">L</span>
-            <span className="text-primary">E</span>
-            <span className="text-dark">M</span>
-            <span className="text-primary">N</span>
-            <span className="text-primary">O</span>
-            <span className="text-dark">S</span>
+            <img src="mini_liq_logo.png" alt="" style={imgStyle} />
           </NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
